@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/cardborder"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/cardborder"
+            android:title="@string/menu_gallery" />
+
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/cardborder"
+            android:title="Tableau de l'ordre" />
+
+        <item
+            android:id="@+id/nav_cnational"
+            android:icon="@drawable/cardborder"
+            android:title="Conseil National" />
+        <item
+            android:id="@+id/nav_cprovicial"
+            android:icon="@drawable/cardborder"
+            android:title="Conseil Provinciale" />
+
+        <item
+            android:id="@+id/LegislatFragment"
+            android:icon="@drawable/cardborder"
+            android:title="Textes législatifs et reglementaires" />
+        <item
+            android:id="@+id/profilFragment"
+            android:icon="@drawable/cardborder"
+            android:title="@string/profil" />
+
+
+        <item
+            android:id="@+id/aproposFragment"
+            android:icon="@drawable/cardborder"
+            android:title="Contactez-nous" />
+
+    </group>
+
+
+</menu>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProfilFragment"
+    android:background="@color/white">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:text="@string/hello_blank_fragment" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="0dp"
+        android:layout_height="match_parent"
+        tools:context=".screens.Profil">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <RelativeLayout
+                android:id="@+id/layoutPicture"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_centerInParent="true"
+                    android:id="@+id/picturer"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:src="@drawable/avatart" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fabChoosePic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    app:srcCompat="@drawable/ic_picture"
+                    app:fabSize="mini"
+                    tools:ignore="VectorDrawableCompat" />
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/layoutName"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_below="@id/layoutPicture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="@dimen/cardview_default_elevation"
+                app:cardCornerRadius="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="16dp">
+
+                    <TextView
+                        android:text="Informations"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="20sp"
+                       android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/name"
+                            android:hint="Nom"
+                            android:text="Yannick"
+                            android:textColor="@color/black"
+                            android:background="@drawable/cardborder"
+                            android:fontFamily="sans-serif-light"
+                            android:inputType="textPersonName|textCapWords"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10sp"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/mail"
+                            android:hint="Prenom"
+                            android:text="Kande"
+                            android:textColor="@color/black"
+                            android:background="@drawable/cardborder"
+                            android:fontFamily="sans-serif-light"
+                            android:inputType="textPersonName|textCapWords"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10sp"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/phone"
+                            android:hint="N. CNOP"
+                            android:text="00239K"
+                            android:background="@drawable/cardborder"
+                            android:fontFamily="sans-serif-light"
+                            android:textColor="@color/black"
+                            android:inputType="textPersonName|textCapWords"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="20dp">
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/spinner1"
+                            android:background="@drawable/cardborder"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10sp">
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="0sp"
+                            android:layout_height="40dp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/cardborder"
+                            android:id="@+id/spinner2"/>
+                    </LinearLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10sp"
+                        android:layout_height="wrap_content">
+                        <EditText
+
+                            android:hint="Email"
+                            android:text="Yannickkandee@gmail.com"
+                            android:background="@drawable/cardborder"
+                            android:fontFamily="sans-serif-light"
+                            android:inputType="text"
+                            android:textColor="@color/black"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10sp"
+                        android:layout_height="wrap_content">
+                        <EditText
+
+                            android:hint="Adresse"
+                            android:text="12 av. Sept Maison C.Ngaliema Q.GB"
+                            android:background="@drawable/cardborder"
+                            android:fontFamily="sans-serif-light"
+                            android:inputType="text"
+                            android:textColor="@color/black"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10sp"
+                        android:layout_height="wrap_content">
+                        <EditText
+
+                            android:hint="Telephone"
+                            android:text="0811632979"
+                            android:fontFamily="sans-serif-light"
+                            android:inputType="numberPassword"
+                            android:background="@drawable/cardborder"
+                            android:layout_width="match_parent"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10sp"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/passw"
+                            android:hint="Password"
+                            android:text="000000"
+                            android:fontFamily="sans-serif-light"
+                            android:inputType="numberPassword"
+                            android:textColor="@color/black"
+                            android:background="@drawable/cardborder"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10sp"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/pssw"
+                            android:hint="Confirmer votre mot de passe"
+                            android:text="000000"
+                            android:fontFamily="sans-serif-light"
+                            android:inputType="numberPassword"
+                            android:background="@drawable/cardborder"
+                            android:layout_width="match_parent"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btninscri"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:layout_below="@id/layoutName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="@dimen/cardview_default_elevation"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="16dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:background="@color/white"
+                        android:gravity="center">
+                        <Button
+                            android:layout_width="300dp"
+                            android:id="@+id/btnsave"
+                            android:background="@drawable/login_button_bk"
+                            android:textColor="#fff"
+                            android:layout_height="50dp"
+                            android:text="modifier"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

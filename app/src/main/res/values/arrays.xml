@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 The Android Open Source Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- These are the options displayed in the gender drop-down Spinner -->
+    <string-array name="array_gender_options">
+        <item>-Type commande</item>
+        <item>Direct</item>
+        <item>Reservation</item>
+    </string-array>
+
+
+    <string-array name="array_nombrevehi">
+        <item>-Nombre vehicule</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="array_time">
+        <item>-Durée</item>
+        <item>30min</item>
+        <item>1h</item>
+    </string-array>
+
+
+    <string-array name="Tableau">
+        <item>Tableau</item>
+        <item>A - Pharmaciens d officines</item>
+        <item>B - Pharmaciens grossistes</item>
+        <item>C - Pharmaciens d industries</item>
+        <item>D - Autres pharmaciens</item>
+    </string-array>
+
+    //commune
+
+    <string-array name="cnop">
+
+        <item>Kisangani</item>
+        <item>Kindu</item>
+        <item>Kassai-central</item>
+        <item>Kassai-Oriental</item>
+        <item>Katanga</item>
+        <item>Maniema</item>
+        <item>Bandundu</item>
+        <item>Bas-Congo</item>
+        <item>Bas-Uele</item>
+        <item>Haut-lomami</item>
+        <item>Congo-Central</item>
+        <item>Kwango</item>
+        <item>Nord-Kivu</item>
+        <item>Sankuru</item>
+        <item>Tshopo</item>
+        <item>Tshuapa</item>
+        <item>Mai-Ndombe</item>
+        <item>Ituri</item>
+        <item>Equateur</item>
+        <item>Mongala</item>
+        <item>Lualaba</item>
+        <item>Tanganika</item>
+
+    </string-array>
+
+
+    <string-array name="profession">
+        <item>Docteur</item>
+        <item>Professeur</item>
+        <item>Monsieur</item>
+        <item>Madame</item>
+
+    </string-array>
+
+    <string-array name="mois">
+        <item>10$ (1 mois)</item>
+        <item>20$ (2 mois) </item>
+        <item>30$ (3 mois)</item>
+        <item>40$ (4 mois)</item>
+        <item>50$ (5 mois)</item>
+        <item>60$ (6 mois)</item>
+        <item>70$ (7 mois)</item>
+        <item>80$ (8 mois)</item>
+        <item>90$ (9 mois)</item>
+        <item>100$ (10 mois)</item>
+        <item>110$ (11 mois)</item>
+        <item>120$ (1 an)</item>
+    </string-array>
+
+    //commune
+
+    <string-array name="array_commune">
+        <item>Commune</item>
+        <item>BANDALUNGWA</item>
+        <item>BARUMBU</item>
+        <item>BUMBU</item>
+        <item>GOMBE</item>
+        <item>KALAMU</item>
+        <item>KASA-VUBU</item>
+        <item>KIMBASEKE</item>
+        <item>KINSHASA</item>
+        <item>KINTAMBO</item>
+        <item>KISENSO</item>
+        <item>LEMBA</item>
+        <item>LIMETE </item>
+        <item>LINGWALA</item>
+        <item>MAKALA</item>
+        <item>MALUKU</item>
+        <item>MASINA</item>
+        <item>MATETE</item>
+        <item>MONT-NGAFULA</item>
+        <item>NJILI</item>
+        <item>NGABA</item>
+        <item>NGALIEMA</item>
+        <item>NGIRI-NGIRI</item>
+        <item>NSELE</item>
+        <item>SELEMBAO</item>
+
+    </string-array>
+
+    //
+
+    <string-array name="moiscot">
+        <item>Janvier</item>
+        <item>Février</item>
+        <item>Mars</item>
+        <item>Avril</item>
+        <item>Mai</item>
+        <item>Juin</item>
+        <item>Juillet</item>
+        <item>Aout</item>
+        <item>Octobre</item>
+        <item>Novembre</item>
+        <item>Septembre</item>
+        <item>Decembre</item>
+    </string-array>
+
+
+    <string-array name="annecot">
+        <item>2005</item>
+        <item>2006</item>
+        <item>2007</item>
+        <item>2008</item>
+        <item>2009</item>
+        <item>2010</item>
+        <item>2011</item>
+        <item>2012</item>
+        <item>2013</item>
+        <item>2014</item>
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+    </string-array>
+
+</resources>

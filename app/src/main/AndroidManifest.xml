@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mobile.opapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_opc"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_opc"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OpApp">
+
+        <activity android:name=".payementotion"
+
+            android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".cpKin"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity android:name=".Cpro"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Cotisations"
+
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".payecard"
+
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Cnop"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Register"
+            android:parentActivityName=".Splash"/>
+
+        <activity android:name=".Login"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".Splash"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.OpApp.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
